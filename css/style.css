@@ -136,6 +136,7 @@ body, html{
   font-size: 20px;
   padding: 40px 0 40px 0;
   margin-top: 0;
+  width: auto;
 }
 
 
@@ -162,6 +163,6 @@ body, html{
     margin-top: -0.7em;
   }
   .subdepartment .title{
-    padding: 40px 10% 40px 10%;
+    padding: 40px 20px 40px 20px;
   }
 }
