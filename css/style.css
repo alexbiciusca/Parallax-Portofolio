@@ -150,6 +150,7 @@ body, html{
   }
   .descriptionText{
     padding: 0 10% 0 10%;
+    line-height: 1.3em;
   }
   .intro, .sectionParallax{
     background-attachment: scroll;
