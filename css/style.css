@@ -148,4 +148,16 @@ body, html{
   .workingWithUs{
     font-size: 25px;
   }
+  .descriptionText{
+    padding: 0 10% 0 10%;
+  }
+  .intro, .sectionParallax{
+    background-attachment: scroll;
+  }
+  .title{
+    letter-spacing: 0;
+    font-size: 25px;
+    width: auto;
+    margin-top: -0.7em;
+  }
 }
