@@ -137,3 +137,15 @@ body, html{
   padding: 40px 0 40px 0;
   margin-top: 0;
 }
+
+
+
+
+@media (max-width: 700px) {
+  body, html{
+    font-size: 16px;
+  }
+  .workingWithUs{
+    font-size: 25px;
+  }
+}
