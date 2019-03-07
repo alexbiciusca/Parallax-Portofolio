@@ -101,7 +101,7 @@ body, html{
 }
 
 .paragraph{
-  padding: 0 10% 10% 10%;
+  padding: 0 10% 5% 10%;
   font-size: 16px;
   line-height: 1.3em;
   font-weight: 300;
@@ -119,6 +119,7 @@ body, html{
 .sectionParallax .title{
   background: none;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .department{
@@ -129,18 +130,100 @@ body, html{
 .subdepartment{
   display: flex;
   flex-direction: column;
-  padding: 40px 0 40px 0;
+  padding: 0px 0 40px 0;
 }
 
 .subdepartment .title{
   font-size: 20px;
-  padding: 40px 0 40px 0;
+  padding: 10px 0 30px 0;
   margin-top: 0;
   width: auto;
 }
 
+.ourWorks{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+}
 
+.topWorkz, .joint, .kyiv, .lable, .market, .worktop{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 235px;
 
+}
+
+.topWorkz{
+  background-image:url('../img/topWorkz.png');
+  margin: 0 0.5vh 0.5vh 0;
+}
+
+.joint{
+  background-image:url('../img/joint.png');
+  margin: 0 0.5vh 0.5vh 0.5vh;
+}
+
+.market{
+  background-image:url('../img/market.png');
+  margin: 0 0 0.5vh 0.5vh;
+}
+
+.worktop{
+  background-image:url('../img/worktop.png');
+  margin: 0.5vh 0.5vh 0 0;
+}
+
+.lable{
+  background-image:url('../img/lable.png');
+  margin: 0.5vh 0.5vh 0 0.5vh;
+}
+
+.kyiv{
+  background-image:url('../img/kyiv.png');
+  margin: 0.5vh 0 0 0.5vh;
+}
+
+.subTitle{
+  position: absolute;
+  bottom: 1.3em;
+  left: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: white;
+  font-size: 34px;
+}
+
+@media (max-width: 1250px) {
+  .ourWorks{
+    grid-template-columns: 50% 50%;
+  }
+
+  .topWorkz{
+    margin: 0 0.5vh 0.5vh 0;
+  }
+
+  .joint{
+    margin: 0 0 0.5vh 0.5vh;
+  }
+
+  .market{
+    margin: 0.5vh 0.5vh 0.5vh 0;
+  }
+
+  .worktop{
+    margin: 0.5vh 0 0.5vh 0.5vh;
+  }
+
+  .lable{
+    margin: 0.5vh 0.5vh 0 0;
+  }
+
+  .kyiv{
+    margin: 0.5vh 0 0 0.5vh;
+  }
+}
 
 @media (max-width: 700px) {
   body, html{
@@ -156,14 +239,23 @@ body, html{
   .intro, .sectionParallax{
     background-attachment: scroll;
   }
+  .paragraph{
+    padding: 0 10% 10% 10%;
+  }
   .title{
     letter-spacing: 0;
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     margin-top: -0.7em;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
   }
   .subdepartment .title{
     padding: 20px 20px 20px 20px;
+  }
+  .subTitle{
+    bottom: 20px;
+    left: 20px;
+    letter-spacing: 0;
+    font-size: 20px;
   }
 }
